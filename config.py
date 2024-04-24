@@ -528,7 +528,9 @@ DEFAULT_FEATURE_FLAGS.update(
 )
 
 # This is merely a default.
-FEATURE_FLAGS: dict[str, bool] = {}
+FEATURE_FLAGS: dict[str, bool] = {
+  "EMBEDDED_SUPERSET": True, # requirement
+}
 
 # A function that receives a dict of all feature flags
 # (DEFAULT_FEATURE_FLAGS merged with FEATURE_FLAGS)
