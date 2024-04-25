@@ -1138,7 +1138,7 @@ ENABLE_CHUNK_ENCODING = False
 # Whether to bump the logging level to ERROR on the flask_appbuilder package
 # Set to False if/when debugging FAB related issues like
 # permission management
-SILENCE_FAB = True
+SILENCE_FAB = False
 
 FAB_ADD_SECURITY_VIEWS = True
 FAB_ADD_SECURITY_PERMISSION_VIEW = False
