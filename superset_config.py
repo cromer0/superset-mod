@@ -5,6 +5,7 @@ FEATURE_FLAGS = {
     "EMBEDDED_SUPERSET": True
 }
 SQLALCHEMY_DATABASE_URI = 'postgresql://superset:39a0e106674779aa@srv-captain--db:5432/superset'
+SUPERSET_SECRET_KEY="HV4cd3qgemM7NpBo2"
 
 CORS_OPTIONS = {
   'supports_credentials': True,
