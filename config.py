@@ -184,7 +184,7 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 # or use `SUPERSET_SECRET_KEY` environment variable.
 # Use a strong complex alphanumeric string and use a tool to help you generate
 # a sufficiently random sequence, ex: openssl rand -base64 42"
-SECRET_KEY = "HV4cd3qgemM7NpBo-mod"
+SECRET_KEY = os.environ.get("SUPERSET_SECRET_KEY")
 
 # The SQLAlchemy connection string.
 #SQLALCHEMY_DATABASE_URI = (
@@ -192,7 +192,7 @@ SECRET_KEY = "HV4cd3qgemM7NpBo-mod"
 #)
 
 # SQLALCHEMY_DATABASE_URI = 'mysql://myapp@localhost/myapp'
-SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://superset:e4e8804abefed274@captain.forza-dev.do.symby.es:5435/superset'
+SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
 
 # In order to hook up a custom password store for all SQLALCHEMY connections
 # implement a function that takes a single argument of type 'sqla.engine.url',
